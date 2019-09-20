@@ -13,8 +13,7 @@ from tweepy import Stream
 import logging
 import pprint
 
-logging.basicConfig(filename="twitter_connector.log", level=logging.WARNING,
-                    filemode="w", format="%(asctime)s: %(process)d - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.WARNING, format="%(asctime)s: %(process)d - %(levelname)s - %(message)s")
 logging.debug("Logging into Twitter REST API")
 
 # General Authentication
